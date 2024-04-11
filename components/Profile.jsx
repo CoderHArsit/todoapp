@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import React from 'react'
 import PromptCard from './PromptCard'
-import { Draggable } from 'react-draggable'
+// import { Draggable } from 'react-draggable'
 const Profile = ({name,desc,data,handleEdit,handleDelete}) => {
 
 
@@ -55,7 +55,7 @@ const handleTagClick = (tagName) => {
       {/* {/* <h1 className='head_text text-left'>
         <span className='blue_gradient'>{name}Profile</span></h1> */}
         {/* <p className='desc text-left'>{desc}</p> */}
-        <Draggable>
+  
         <div className='mt-10 prompt_layout'>
           
             {data?data.map((post)=>(
@@ -72,7 +72,7 @@ const handleTagClick = (tagName) => {
             Add new tasks clicking profile
         </p>}
         </div>
-        </Draggable>
+        
     </section>
     </>
   )
