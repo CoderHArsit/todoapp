@@ -9,7 +9,7 @@ const Home = () => {
 {/* <Nav/> */}
   <h1 className="head_text text-center" style={{color:"#c22975"}}>
     Write Your Daily 
-    <br className="max-md:hidden"/>
+    <br />
     <span className="orange_gradient text-center">Tasks To Do </span>
   
   </h1>

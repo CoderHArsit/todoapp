@@ -44,12 +44,12 @@ const MyProfile=()=>{
 <div className="w-full">
 <section className="w-full flex-center flex-col">
 {/* <Nav/> */}
-  <h1 className="head_text text-center" style={{color:"black"}}>
-     Your Daily Tasks To Do
-    <br className="max-md:hidden"/>
-    <span className="orange_gradient text-center"></span>
+<h1 className="head_text text-center" style={{color:"purple"}}>
+    Your Daily 
+    <br />
+    <span className="orange_gradient text-center">Tasks To Do </span>
   
- </h1>
+  </h1>
     {/* <Feed/> */}
     
 </section>
