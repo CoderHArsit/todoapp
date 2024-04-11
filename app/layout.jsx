@@ -6,8 +6,8 @@ import Provider from '@components/Provider'
 import bg from "../public/assets/images/bg.jpg"
 import Footer from '@components/Footer';
 export const metadata={
-    title:"ImplementedIdeas",
-    description:"Share Your unique Implemented Ideas.",
+    title:"ToDoApp",
+    description:"store your tasks.",
     
 }
 
