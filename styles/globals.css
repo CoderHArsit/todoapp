@@ -30,7 +30,7 @@
 
 .main:after {
   content: "";
-  background-image: url("/assets/images/newbg.jpg");
+  background-image: linear-gradient(130deg, rgb(2, 103, 9) ,#54069c);
    /* background-repeat: no-repeat;  */
   background-size: 100% auto ;
   z-index: 1;
@@ -85,8 +85,8 @@
 }
 
 .black_btn {
-  @apply rounded-full border-2 border-pink-600 bg-black py-1.5 px-5 text-white transition-all hover:bg-pink-500 hover:text-white text-center text-xs
-  h-12 w-6 sm:h-12 sm:w-24
+  @apply rounded-full border-2 border-pink-600 bg-black py-1.5 px-5 text-white transition-all hover:bg-pink-500 hover:text-white text-center text-sm
+  h-12 w-24 sm:h-12 sm:w-24
   sm:text-sm font-inter flex items-center justify-center;
 }
 .main_btn {
@@ -109,11 +109,12 @@
 .nav_text {
   @apply  text-3xl font-extrabold font-sans  leading-[1.15] 
   text-red-500
-  hover:animate-pulse  sm:text-4xl;
+  hover:animate-pulse sm:text-4xl;
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-yellow-400 via-yellow-700 to-yellow-900 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-yellow-400  to-yellow-400 bg-clip-text text-transparent
+  font-serif font-bold;
 }
 
 .red_gradient{
@@ -144,7 +145,9 @@
 }
 
 .prompt_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+  @apply space-y-6 py-8 sm:columns-2 
+  gap-3
+  sm:gap-6 xl:columns-3;
 }
 
 /* Feed Component */
@@ -171,13 +174,12 @@
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+  @apply text-sm font-inter text-blue-100 hover:text-gray-500 font-medium;
 }
 
 /* PromptCard Component */
 .prompt_card {
   @apply flex-1 break-inside-avoid rounded-2xl border-2 
-  
   border-pink-200 bg-yellow-600/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
 }
 

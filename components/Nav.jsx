@@ -18,15 +18,15 @@ const Nav=()=>{
     },[]);
   
     return (
-       <nav className="flex-between w-full mb-16 ">
-        <Link href="/" className="flex gap-2 flex-center">
+       <nav className="flex-between w-full mb-16  ">
+        <Link href="/" className="flex gap-0 flex-center">
             <Image
-            src="/assets/images/newlogo.png"
+            src="/assets/images/bg3.png"
             alt="Promptia logo"
             width={100}
             height={100}
             className="object-contain"/>
-            <p className="nav_text red_gradient " >Implemented Ideas</p>
+            <p className="nav_text orange_gradient ml-0 " >ToDo App</p>
         </Link>
         
         {/* Desktop Navigation */}

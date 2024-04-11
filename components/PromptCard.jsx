@@ -11,23 +11,24 @@ const PromptCard = ({ post, handleTagClick,handleEdit, handleDelete})=>{
     const pathName=usePathname();
     const router= useRouter();
 
-const [copied,setCopied]=useState("");
-const handleCopy = () =>{
-    setCopied(post.link);
-    navigator.clipboard.writeText(post.link);
-    setTimeout(()=> setCopied(""),3000)
-}
-const handleProfileClick = () => {
-    console.log(post);
+// const [copied,setCopied]=useState("");
+// const handleCopy = () =>{
+//     setCopied(post.link);
+//     navigator.clipboard.writeText(post.link);
+//     setTimeout(()=> setCopied(""),3000)
+// }
+// const handleProfileClick = () => {
+//     console.log(post);
 
-    if (post.creator._id === session?.user.id) return router.push("/profile");
+//     if (post.creator._id === session?.user.id) return router.push("/profile");
 
-    router.push(`/profile/${post.creator._id}?name=${post.creator.username}`);
-  };
+//     router.push(`/profile/${post.creator._id}?name=${post.creator.username}`);
+//   };
   return (
-    <div className='prompt_card'>
-        <div className='flex justify-between items-start gap-5'>
-            <div className='flex-1 flex justify-start items-center gap-3 cursor-pointer' onClick={handleProfileClick}>
+    <div className='prompt_card'
+   >
+        {/* <div className='flex justify-between items-start gap-5'> */}
+            {/* <div className='flex-1 flex justify-start items-center gap-3 cursor-pointer' onClick={handleProfileClick}>
                 <Image
                  
                  src={post.creator.image}
@@ -50,12 +51,12 @@ const handleProfileClick = () => {
         :    '/assets/icons/copy.svg'}
         width={12}
         height={12}/>
-           </div>
+           </div> */}
 
-        </div>
-        <p className='my-4 font-satoshi text-sm  font-bold  text-pink-600'>{post.link}</p>
+        {/* </div> */}
+        <p className='mt-1 font-satoshi text-2xl  font-bold  text-black'>{post.link}</p>
        <p className='my-4 font-satoshi text-sm text-yellow-500'>{post.prompt}</p>
-       <p className='font-inter text-sm blue_gradient cursor-pointer'
+       <p className='font-inter text-sm text-gray-400 cursor-pointer'
        onClick={()=> handleTagClick && handleTagClick(post.tag)}>{post.tag}</p>
         
 

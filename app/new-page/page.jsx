@@ -7,12 +7,11 @@ const Home = () => {
 <section className="w-full flex-center flex-col">
 {/* <Nav/> */}
   <h1 className="head_text text-center" style={{color:"#c22975"}}>
-    Share Your Unique 
+    Write Your Daily
     <br className="max-md:hidden"/>
-    <span className="orange_gradient text-center">Implemented Ideas</span>
+    <span className="orange_gradient text-center">Tasks To Do</span>
   
-  <p className="desc justify-center align-middle text-center">
-    Welcome to Implemented Ideas a platform where you can share your work and creation be it website or something else. </p></h1>
+ </h1>
     <Feed/>
     
 </section>

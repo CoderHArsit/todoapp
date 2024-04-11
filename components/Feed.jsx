@@ -3,6 +3,7 @@
 import {useState,useEffect} from 'react'
 import PromptCard from './PromptCard';
 import { data } from 'autoprefixer';
+import { useSession } from 'next-auth/react';
 
 const PromptCardList = ({data,handleTagClick})=>{
   return(
@@ -25,7 +26,7 @@ const Feed = () => {
   }
   useEffect(()=>{
     const fetchPosts= async()=>{
-      const response=await fetch('/api/prompt');
+      const response=await fetch(`/api/users/${session?.user.id}/posts`);
       const data= await response.json();
       setPosts(data);
     }

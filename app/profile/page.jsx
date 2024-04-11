@@ -41,13 +41,29 @@ const MyProfile=()=>{
  
     }
     return (
+<div className="w-full">
+<section className="w-full flex-center flex-col">
+{/* <Nav/> */}
+  <h1 className="head_text text-center" style={{color:"black"}}>
+     Your Daily Tasks To Do
+    <br className="max-md:hidden"/>
+    <span className="orange_gradient text-center"></span>
+  
+ </h1>
+    {/* <Feed/> */}
+    
+</section>
+
+
+
+        
         <Profile
-        name="My"
-        desc="Welcome to your personalized profile page"
+      
         data={posts}
         handleEdit={handleEdit}
         handleDelete={handleDelete}
         />
+        </div>
     )
 }
 

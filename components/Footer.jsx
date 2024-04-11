@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../public/assets/images/newlogo.png';
+import logo from '../public/assets/images/bg3.png';
 import Image from 'next/image';
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         height={50}
         className='rounded-full object-contain ml-auto mr-auto justify-center align-middle '
         ></Image><a className='text-3xl mt-1 orange_gradient'>
-            Implemented Ideas
+          ToDo App
        </a> </li>
         <li>
        <a href='https://www.linkedin.com/in/harshit-saxena-35b70b211/' className='text-white'>About Us</a></li>
