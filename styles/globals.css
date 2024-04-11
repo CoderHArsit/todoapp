@@ -198,3 +198,20 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+/* styles.css */
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 130px;
+  gap: 10px;
+}
+
+.skeleton-item {
+  @apply flex-1 break-inside-avoid rounded-2xl border-2 
+  border-pink-200 bg-gray-300/20 bg-clip-padding p-6 pb-4 pt-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full 
+  text-2xl sm:text-3xl text-white  font-bold;
+}
