@@ -66,7 +66,9 @@ const handleTagClick = (tagName) => {
                 handleEdit={()=>handleEdit && handleEdit(post)}
                 handleDelete={()=> handleDelete && handleDelete(post)}
                 />
-            )):<p>Add New</p>}
+            )):<p className="text-2xl sm:text:3xl font-bold text-white text-center mt-24 mb-52 border-red-600 rounded-full hover:animate-pulse">
+            Add new tasks clicking profile
+        </p>}
         </div>
       
     </section>
