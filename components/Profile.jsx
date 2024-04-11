@@ -57,7 +57,7 @@ const handleTagClick = (tagName) => {
 
         <div className='mt-10 prompt_layout'>
           
-            {data.map((post)=>(
+            {data?data.map((post)=>(
                
                <PromptCard
                 
@@ -66,7 +66,7 @@ const handleTagClick = (tagName) => {
                 handleEdit={()=>handleEdit && handleEdit(post)}
                 handleDelete={()=> handleDelete && handleDelete(post)}
                 />
-            ))}
+            )):<p>Add New</p>}
         </div>
       
     </section>
