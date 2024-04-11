@@ -69,7 +69,7 @@ const MyProfile = () => {
                 <>      
                 <Link href="/create-prompt"
               className="black_btn
-              mt-24 mb-48 ml-auto mr-auto">
+              mt-24 mb-24 ml-auto mr-auto">
                 Add New 
               </Link> 
                           <Profile
