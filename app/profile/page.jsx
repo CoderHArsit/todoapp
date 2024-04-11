@@ -65,11 +65,17 @@ const MyProfile = () => {
                <LoadingSkeleton />
             ) : session?.user ? (
                 // Render profile component with actual data
-                <Profile
+                <>      
+                <Link href="/create-prompt"
+              className="black_btn">
+                Add New 
+              </Link> 
+                          <Profile
                     data={posts}
                     handleEdit={handleEdit}
                     handleDelete={handleDelete}
-                />
+                /></>
+
             ) : (
                 // Render login prompt if user is not logged in
                 <p className="text-2xl sm:text:3xl font-bold text-white text-center mt-24 mb-52 border-red-600 rounded-full hover:animate-pulse">
