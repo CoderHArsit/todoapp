@@ -76,10 +76,10 @@ const Nav=()=>{
                         href="/profile"
                         className="dropdown_link"
                         onClick={()=>setToggleDropdown(false)}>My Profile</Link> */}
-                          <Link 
+                          {/* <Link 
                         href="/create-prompt"
                         className="dropdown_link"
-                        onClick={()=>setToggleDropdown(false)}>Add New</Link>
+                        onClick={()=>setToggleDropdown(false)}>Add New</Link> */}
                         <button
                         type="button"
                         onClick={()=>{

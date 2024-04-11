@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 import Profile from '@components/Profile';
+import Link from "next/link"
 // Import loading skeleton component or library
 import LoadingSkeleton from '@components/LoadingSkeleton';
 
