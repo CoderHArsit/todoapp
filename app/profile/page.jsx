@@ -68,7 +68,8 @@ const MyProfile = () => {
                 // Render profile component with actual data
                 <>      
                 <Link href="/create-prompt"
-              className="black_btn">
+              className="black_btn
+              mt-24 mb-48 ml-auto mr-auto">
                 Add New 
               </Link> 
                           <Profile
